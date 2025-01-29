@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SKL-.YYYY.-.#######",
+ "creation": "2025-01-27 13:49:14.981719",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pk0l",
+  "amended_from",
+  "company",
+  "kolam",
+  "nama_kolam",
+  "column_break_ofvh",
+  "kolam_html",
+  "ikan_dan_biaya_section",
+  "jumlah_ikan",
+  "column_break_dlzm",
+  "total_biaya",
+  "hpp_ikan_ekor"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pk0l",
+   "fieldtype": "Section Break",
+   "label": "Siklus "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Siklus Tanam",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "kolam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kolam",
+   "options": "Kolam",
+   "reqd": 1
+  },
+  {
+   "default": "Nama Kolam",
+   "fieldname": "nama_kolam",
+   "fieldtype": "Data",
+   "label": "Nama Kolam",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ofvh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ikan_dan_biaya_section",
+   "fieldtype": "Section Break",
+   "label": "Ikan dan Biaya"
+  },
+  {
+   "default": "0",
+   "fieldname": "jumlah_ikan",
+   "fieldtype": "Float",
+   "label": "Jumlah Ikan",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_dlzm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_biaya",
+   "fieldtype": "Currency",
+   "label": "Total Biaya",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "hpp_ikan_ekor",
+   "fieldtype": "Currency",
+   "label": "Hpp Ikan per Ekor",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kolam_html",
+   "fieldtype": "HTML",
+   "label": "Foto Kolam"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-01-27 22:00:51.696557",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Siklus Tanam",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:kolam_code",
+ "creation": "2025-01-27 09:45:58.218669",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "master_kolam_section",
+  "kolam_code",
+  "kolam_name",
+  "jenis_kolam",
+  "column_break_iwru",
+  "aktif",
+  "kolam_image",
+  "kolam_image_attach"
+ ],
+ "fields": [
+  {
+   "fieldname": "master_kolam_section",
+   "fieldtype": "Section Break",
+   "label": "Master Kolam"
+  },
+  {
+   "fieldname": "kolam_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kolam Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "kolam_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Kolam Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_kolam",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Kolam",
+   "options": "Terpal\nBeton",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iwru",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "aktif",
+   "fieldtype": "Check",
+   "label": "Aktif"
+  },
+  {
+   "fieldname": "kolam_image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "kolam_image_attach"
+  },
+  {
+   "fieldname": "kolam_image_attach",
+   "fieldtype": "Attach Image",
+   "label": "Attach Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-27 10:22:28.939441",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Kolam",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
