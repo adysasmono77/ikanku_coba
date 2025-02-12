@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PIN-.YY.-.MM.-.#######",
+ "creation": "2025-02-03 20:59:08.909878",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_i67e",
+  "amended_from",
+  "company",
+  "tanggal",
+  "kolam",
+  "siklus_tanam",
+  "column_break_qftl",
+  "html_lwjz",
+  "reff_sales_invoice",
+  "reff_jurnal_hpp",
+  "panen_section",
+  "jenis_transaksi",
+  "kolam_tujuan",
+  "customer",
+  "siklus_tujuan",
+  "column_break_bsqa",
+  "jenis_ikan",
+  "nama_ikan",
+  "column_break_mwub",
+  "quantity",
+  "harga__ekor"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_i67e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Panen Ikan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kolam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kolam",
+   "options": "Kolam",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panen_section",
+   "fieldtype": "Section Break",
+   "label": "Panen"
+  },
+  {
+   "fieldname": "kolam_tujuan",
+   "fieldtype": "Link",
+   "label": "Kolam Tujuan",
+   "options": "Kolam"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "jenis_transaksi",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Jenis Panen",
+   "options": "\nPanen Jual\nPanen Mutasi",
+   "reqd": 1
+  },
+  {
+   "fieldname": "jenis_ikan",
+   "fieldtype": "Link",
+   "label": "Jenis Ikan",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "harga__ekor",
+   "fieldtype": "Currency",
+   "label": "Harga / Ekor"
+  },
+  {
+   "fieldname": "column_break_bsqa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mwub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nama_ikan",
+   "fieldtype": "HTML",
+   "label": "Nama Ikan"
+  },
+  {
+   "fieldname": "column_break_qftl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "html_lwjz",
+   "fieldtype": "HTML"
+  },
+  {
+   "default": "#",
+   "fieldname": "reff_sales_invoice",
+   "fieldtype": "Data",
+   "label": "Reff Sales Invoice",
+   "read_only": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "reff_jurnal_hpp",
+   "fieldtype": "Data",
+   "label": "Reff Jurnal HPP",
+   "read_only": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "siklus_tanam",
+   "fieldtype": "Data",
+   "label": "Siklus Tanam",
+   "read_only": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "siklus_tujuan",
+   "fieldtype": "Data",
+   "label": "Siklus Tujuan"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-09 10:14:53.546014",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Panen Ikan",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -137,13 +137,17 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Stock Entry": {
+		"before_insert": "library_management.stock_entry_custom.validate_stock_entry_source",
+		"before_cancel": "library_management.stock_entry_custom.prevent_cancel",
+		"on_submit": "library_management.stock_entry_custom.tes",
+
+	},
+	# "Sales Invoice" : {
+	# 	"on_submit" : "library_management.overrides_sales_invoice.add_hpp_entry"
+	# }
+}
 
 # Scheduled Tasks
 # ---------------

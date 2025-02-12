@@ -10,3 +10,6 @@ class SiklusTanam(Document):
 
 	def before_insert(doc):
 		doc.total_biaya = '0'
+		doc.hpp_ikan_ekor = '0'
+		doc.jumlah_bibit = '0'
+		doc.jumlah_ikan = '0'

@@ -10,6 +10,7 @@
   "kolam_code",
   "kolam_name",
   "jenis_kolam",
+  "cost_center",
   "column_break_iwru",
   "aktif",
   "kolam_image",
@@ -64,11 +65,18 @@
    "fieldname": "kolam_image_attach",
    "fieldtype": "Attach Image",
    "label": "Attach Image"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-27 10:22:28.939441",
+ "modified": "2025-02-09 11:18:37.875185",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Kolam",

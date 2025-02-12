@@ -47,7 +47,6 @@ frappe.ui.form.on("Aplikasi Kolam", {
                 frappe.set_route('query-report', 'General Ledger', {
                  });
 
-                console.log(frappe) 
             });
 
         }
@@ -58,9 +57,7 @@ frappe.ui.form.on("Aplikasi Kolam", {
      },
 
      before_load: function(frm) {
-        // if (frm.is_new()) {
-        //     frm.set_value('reff_stock_entry', '');
-        // }
+
     }
 
  });

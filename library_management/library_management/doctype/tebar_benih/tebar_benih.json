@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TBI-.YYYY.-.######",
+ "creation": "2025-01-30 14:30:32.572410",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_id4k",
+  "amended_from",
+  "company",
+  "tanggal",
+  "kolam",
+  "siklus_tanam",
+  "foto_kolam_column",
+  "html_kolam_gbr",
+  "reff_stock_entry",
+  "benih_section",
+  "jenis_benih",
+  "nama_bibit",
+  "column_break_rnsi",
+  "quantity",
+  "gudang"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_id4k",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Tebar Benih",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Tanggal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kolam",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Kolam",
+   "options": "Kolam",
+   "reqd": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "siklus_tanam",
+   "fieldtype": "Data",
+   "label": "Siklus",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "benih_section",
+   "fieldtype": "Section Break",
+   "label": "Benih"
+  },
+  {
+   "fieldname": "column_break_rnsi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "foto_kolam_column",
+   "fieldtype": "Column Break",
+   "label": "Foto Kolam"
+  },
+  {
+   "fieldname": "html_kolam_gbr",
+   "fieldtype": "HTML"
+  },
+  {
+   "default": "#",
+   "fieldname": "reff_stock_entry",
+   "fieldtype": "Data",
+   "label": "Reff Stock entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "gudang",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "jenis_benih",
+   "fieldtype": "Link",
+   "label": "Jenis Benih",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "nama_bibit",
+   "fieldtype": "Data",
+   "label": "Nama",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-02-03 11:50:25.066200",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Tebar Benih",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

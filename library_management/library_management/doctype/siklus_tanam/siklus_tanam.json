@@ -13,6 +13,11 @@
   "nama_kolam",
   "column_break_ofvh",
   "kolam_html",
+  "bibit_section",
+  "jenis_bibit_ikan",
+  "nama_bibit",
+  "column_break_ytyu",
+  "jumlah_bibit",
   "ikan_dan_biaya_section",
   "jumlah_ikan",
   "column_break_dlzm",
@@ -95,12 +100,40 @@
    "fieldname": "kolam_html",
    "fieldtype": "HTML",
    "label": "Foto Kolam"
+  },
+  {
+   "fieldname": "bibit_section",
+   "fieldtype": "Section Break",
+   "label": "Bibit"
+  },
+  {
+   "default": "\"-\"",
+   "fieldname": "jenis_bibit_ikan",
+   "fieldtype": "Data",
+   "label": "Jenis Ikan"
+  },
+  {
+   "fieldname": "column_break_ytyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "jumlah_bibit",
+   "fieldtype": "Float",
+   "label": "Jumlah",
+   "read_only": 1
+  },
+  {
+   "default": "#",
+   "fieldname": "nama_bibit",
+   "fieldtype": "Data",
+   "label": "Nama"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-27 22:00:51.696557",
+ "modified": "2025-02-03 11:49:47.329662",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Siklus Tanam",
